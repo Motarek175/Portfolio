@@ -79,18 +79,6 @@ button:hover {
   color: var(--main-color);
 }
 
-/* palestine */
-
-.palestine {
-  position: fixed;
-  left: 0px;
-  bottom: 10px;
-}
-
-.palestine img {
-  width: 50px;
-  height: 50px;
-}
 
 /* up to top */
 .up {
