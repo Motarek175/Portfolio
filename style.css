@@ -84,16 +84,18 @@ button:hover {
 .up {
   position: fixed;
   bottom: 10px;
-  right: 20px;
+  right: 10px;
   transform: scale(0);
   transition: transform 0.3s ease;
   cursor: pointer;
+  z-index: 3;
 }
 
 .up i {
   font-size: 30px;
   color: var(--main-color);
   cursor: pointer;
+  z-index: 3;
 }
 
 /* start header */
