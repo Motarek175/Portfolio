@@ -233,7 +233,7 @@ button:hover {
   position: relative;
 }
 
-.landing .container::before {
+/* .landing .container::before {
   content: "";
   position: absolute;
   left: 0;
@@ -245,7 +245,7 @@ button:hover {
   border-radius: 50%;
   filter: blur(80px);
   animation: moving 5s linear alternate infinite;
-}
+} */
 
 .landing .container .text {
   width: 100%;
