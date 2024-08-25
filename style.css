@@ -230,6 +230,21 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   margin: 80px 30px;
+  position: relative;
+}
+
+.landing .container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--main-color);
+  z-index: -1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: moving 5s linear alternate infinite;
 }
 
 .landing .container .text {
@@ -291,7 +306,6 @@ button:hover {
 
 .landing .container .text .btn:hover a {
   color: var(--bg-color);
-
 }
 
 .landing .container .img {
@@ -374,6 +388,23 @@ button:hover {
 
   .landing .container .img {
     display: none;
+  }
+}
+
+@keyframes moving {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+  }
+  100% {
+    left: 100%;
+    top: 0;
+    transform: translateX(-100%);
   }
 }
 
