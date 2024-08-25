@@ -1,6 +1,5 @@
 // up to top
 let up = document.querySelector(".up");
-
 window.onscroll = () => {
   console.log(window.scrollY);
   if (window.scrollY >= 400) {
@@ -36,3 +35,11 @@ function rand() {
   setTimeout(rand, 2000);
 }
 rand();
+
+// donwload cv
+let btn = document.querySelector(".landing .container .text .btn");
+let link = document.querySelector(".landing .container .text .btn a");
+btn.addEventListener("click", () => {
+  link.setAttribute("download", "cv/Mohamed tarek.pdf");
+  link.click();
+});
